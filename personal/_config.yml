@@ -5,8 +5,8 @@
 # SEO plugin
 title: My Resume
 author: Giedrius Tuminauskas
-tagline: Senior DevOps Engineer # Short description for jekyll-seo-tag
-description: A beautiful Jekyll theme for creating resume # Longer description for jekyll-seo-tag
+tagline: Senior Lead DevOps Engineer # Short description for jekyll-seo-tag
+description: Senior Technology Expert / Senior Lead DevOps engineer / Linux System and Network administrator with extensive 20 years experience # Longer description for jekyll-seo-tag
 
 url: "https://gtuminauskas.github.io"
 baseurl: "/website-jekyll" # change it according to your repository name
@@ -28,7 +28,7 @@ google_site_verification: # Put your google verification tag here
 # End SEO
 
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: berry # gray blue turquoise green berry red
+theme_skin: red # gray blue turquoise green berry red
 
 plugins:
   - jekyll-sitemap
