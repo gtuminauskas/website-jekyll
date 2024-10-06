@@ -53,7 +53,7 @@ experiences:
     time: 2024 - Present
     company: Admineta
     details: |
-      B2B Contract work with clients.
+      Business to business (B2B) contract work with clients.
         - Hybrid/remote work
 #    achievements:
 #      desc: |
@@ -76,12 +76,12 @@ experiences:
     time: 2022 - 2024
     company: Zenitech
     details: |
-      &nbsp; Automating infrastructure deployments using terraform and ansible, also extending functionality using python as the core scripting language.<br/>
-      &nbsp; Creating reusable terraform modules for AWS/GCP/Azure Clouds.<br/>
-      &nbsp; Enhancing and looking after terraform, ansible, CI/CD templates frameworks.<br/>
-      &nbsp; Staying up to date with all DevOps best practices alignment per env/project/client.<br/>
-      &nbsp; Updating and fixing code linting, bug fixes, code smells.<br/>
-      &nbsp; Actively participating in various internal initiatives i.e. mentoring, conducting interview processes, verifying external works.<br/>
+      Automating infrastructure deployments using terraform and ansible, also extending functionality using python as the core scripting language.<br/>
+      Creating reusable terraform modules for AWS/GCP/Azure Clouds.<br/>
+      Enhancing and looking after terraform, ansible, CI/CD templates frameworks.<br/>
+      Staying up to date with all DevOps best practices alignment per env/project/client.<br/>
+      Updating and fixing code linting, bug fixes, code smells.<br/>
+      Actively participating in various internal initiatives i.e. mentoring, conducting interview processes, verifying external works.<br/>
 #    achievements:
 #      desc: |
 #        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -129,24 +129,164 @@ experiences:
       Bankera offers traditional and crypto-friendly financial services to individuals and businesses across the world.<br/>
       Functional implementer of the ISO/IEC 27001:2013 certification.<br/>
     technologies:
-      - Openstack
-      - XCP-NG
       - AWS
       - Ansible
-      - Docker
-      - Networking IPv4
-      - Networking IPv6
-      - Security
-      - Patching
+      - Bitcoin Blockchain
+      - Certificates
       - CI/CD
+      - Cloud Applications
+      - Cloud Migration
+      - DNS
+      - Docker
+      - Ethereum Blockchain
+      - Firewalls
       - Gitlab
       - Foreman
+      - IAM
       - Kickstart
+      - Linux System Administration
+      - Networking IPv4
+      - Networking IPv6
+      - Openstack
+      - Patching
+      - Perl
       - PXE
-      - IDM/IAM
-      - Bitcoin Blockchain
-      - Ethereum Blockchain
+      - Python
+      - Security
+      - Servers and Hardware
+      - Shell scripting
       - Wordpress
+      - XCP-NG
+      - Communication
+      - Problem Solving
+      - Analytical Skills
+      - Collaboration Tools
+      - Documentation
+      - Configuration Management
+      - Infrastructure Automation
+      - Interview processes
+      - Performance Analysis
+      - Vulnerability Assessment
+
+  - role: Senior Devops Engineer
+    time: 2019 - 2019
+    company: Ingenico
+    details: |
+      Ingenico - Global leader in seamless payment solutions. It provides its clients with sustainable,
+      trusted and secure solutions across the payment value chain and offers best-in-class payment services ranging from POS, online payments,
+      omnichannel solutions to issuing & acquiring and digital banking to nearly one million merchants and 1,200 banks and financial institutions.
+    technologies:
+      - AWS
+      - Puppet
+      - CI/CD
+      - DataCenter Migration/Consolidation
+      - Foreman
+      - Kickstart
+      - Linux
+      - Networking
+      - Perl
+      - Problem Solving
+      - Python
+      - Shell scripting
+      - PXE
+      - Analytical Skills
+      - Documentation
+      - Automation
+
+  - role: Senior Devops Engineer
+    time: 2018 - 2019
+    company: SpectroCoin
+    details: |
+      SpectroCoin - CryptoCurrency exchange platform
+    technologies:
+      - AWS
+      - Ansible
+      - Bitcoin Blockchain
+      - Certificates
+      - Cloud Applications
+      - Cloud Migration
+      - CI/CD (Gitlab, Jenkins)
+      - Docker
+      - Ethereum Blockchain
+      - Firewalls
+      - Foreman
+      - IAM
+      - Kickstart
+      - Linux System Administration
+      - Networking IPv4
+      - Networking IPv6
+      - Openstack
+      - Patching
+      - Perl
+      - PXE
+      - Python
+      - Security
+      - Servers and Hardware
+      - Shell scripting
+      - Wordpress
+      - XCP-NG
+
+  - role: Linux Systems Engineer
+    subrole: DevOps
+    time: 2017 - 2018
+    company: Intermedix (R1 RCM)
+    details: |
+      Ingenico - Global leader in seamless payment solutions. It provides its clients with sustainable, trusted and secure solutions across the payment value chain and offers best-in-class payment services ranging from POS,
+      online payments, omnichannel solutions to issuing & acquiring and digital banking to nearly one million merchants and 1,200 banks and financial institutions
+    technologies:
+      - Ansible
+      - CI/CD (Jenkins)
+      - Configuration Management
+      - FreeBSD
+      - Kickstart
+      - Linux System Administration
+      - Perl
+      - Networking
+      - Python
+      - PXE
+      - Shell scripting
+      - Vagrant
+      - Virtual Server Farms
+      - Analytical Skills
+      - Disaster and Recovery
+      - Documentation
+      - Infrastructure Automation
+      - Problem Solving
+      - Vulnerability Assessment
+
+  - role: Systems Administrator
+    subrole: DevOps
+    time: 2013 - 2017
+    company: Alva Reputation Analysis
+    details: |
+      Alva provides reputation business intelligence to many of the world's largest organisations, helping them to identify the emerging issues that impact their corporate reputation.<br/>
+      To achieve this we combine our proprietary tracking and content analysis software with the expertise of our dedicated sector analysts, revealing a clear picture of the issues present the greatest risks, or opportunities.<br/>
+      We analyse perception data from millions of content sources producing decision-ready intelligence, which ultimately empowers Corporate Affairs, Corporate Risk and the Boardroom to protect and enhance their reputatiion.<br/>
+      alva – know where you stand.
+    technologies:
+      - DNS
+      - Kickstart
+      - Linux System Administration
+      - Communication
+      - CI/CD
+      - Perl
+      - Problem Solving
+      - Networking
+      - Cloud Migration
+      - Analytical Skills
+      - Python
+      - Ansible
+      - IAM
+      - DevOps
+      - Linux
+      - Bash
+      - Ksh
+      - PXE
+      - Oracle
+      - MongoDB
+      - Documentation
+      - Infrastructure Automation
+      - Disaster and Recovery
 
 #awards:
 #  - name: Award Name Lorem
@@ -239,18 +379,26 @@ skills:
       - name: XCP-NG
         level: 90%
       - name: OpenStack
-        level: 75%
+        level: 80%
       - name: Proxmox
         level: 40%
   - category: others
     tools:
-      - DevOps
       - Code Review
-      - Git
       - Python Unit Testing
       - Vulnerability Scanning
       - Encryption
       - Routing
       - Storage
       - Monitoring
-      - Disaster & Recovery
+      - Disaster and Recovery
+      - Analytical skills
+      - Collaboration tools
+      - Communication
+      - Documentation
+      - Configuration management
+      - Infrastructure automation
+      - Interview processes
+      - Performance analysis
+      - Problem solving
+      - Vulnerability assessment
