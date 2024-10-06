@@ -1,0 +1,256 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+header:
+  # Profile information
+  avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  email: giedrius@tuminauskas.lt
+  phone: +370 647 23028
+  website: https://giedrius.tuminauskas.lt
+  linkedin: gtuminauskas
+  github: gtuminauskas
+  gitlab:
+  bitbucket:
+  twitter:
+  stack-overflow: 9876635/giedrius-tuminauskas # Number/Username, e.g. 123456/alandoe
+  codewars:
+  goodreads: # Number-Username, e.g. 123456-alandoe
+
+languages:
+  - idiom: Lithuanian
+    level: Native
+  - idiom: English
+    level: Professional
+  - idiom: Russian
+    level: Intermediate
+
+interests:
+  - name: Movies
+    link:
+  - name: Mobile gaming
+    link:
+  - name: Hiking
+    link:
+
+summary: |
+  As a seasoned Senior Lead DevOps Engineer, I bring a wealth of experience working with premier brands and significant projects. My expertise lies in driving development efficiency, ensuring robust operational practices, and fostering innovation through advanced automation and CI/CD practices.<br/>
+  I am adept at mentoring team members, offering one-on-one and group guidance, and actively participating in the hiring process to build strong, cohesive teams. My passion for hands-on work is complemented by a strategic oversight of project roadmaps and long-term company objectives, ensuring alignment with business goals.<br/>
+  Play a key role in managing security vulnerabilities, proactively working to prevent breaches and safeguard data integrity. My ability to navigate high-pressure situations and lead cross-functional teams to successful project completions is a testament to my dedication and strategic thinking.<br/>
+  In my current role, I am not just a leader but also a committed contributor, balancing my managerial responsibilities with a love for hands-on technical work. My goal is to continue growing within the DevOps sphere, aiming for higher management roles while maintaining a deep involvement in project execution and company direction.<br/>
+
+education:
+  - degree: BSc in Telecommunications and Electronics Engineering
+    university: Kaunas Technology University
+    time: 2002 - 2004
+    details: |
+      Dropped university courses, when Lithuania joined European Union in 2004.
+        - State support
+        - Part-time studies
+
+experiences:
+  - role: Senior Lead DevOps Engineer (Founder)
+    time: 2024 - Present
+    company: Admineta
+    details: |
+      B2B Contract work with clients.
+        - Hybrid/remote work
+#    achievements:
+#      desc: |
+#        Praesentium voluptatum deleniti atque corrupti quos dolores et quas
+#        molestias excepturi sint occaecati cupiditate non provident.
+#      highlights:
+#        - Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.
+#        - At vero eos et accusamus et iusto odio dignissimos.
+#        - Blanditiis praesentium voluptatum deleniti atque corrupti.
+#        - Maecenas tempus tellus eget.
+    technologies:
+      - Terraform
+      - AWS
+      - CI/CD
+      - Azure DevOps
+      - Github
+      - Patching
+
+  - role: Senior DevOps Engineer
+    time: 2022 - 2024
+    company: Zenitech
+    details: |
+      &nbsp; Automating infrastructure deployments using terraform and ansible, also extending functionality using python as the core scripting language.<br/>
+      &nbsp; Creating reusable terraform modules for AWS/GCP/Azure Clouds.<br/>
+      &nbsp; Enhancing and looking after terraform, ansible, CI/CD templates frameworks.<br/>
+      &nbsp; Staying up to date with all DevOps best practices alignment per env/project/client.<br/>
+      &nbsp; Updating and fixing code linting, bug fixes, code smells.<br/>
+      &nbsp; Actively participating in various internal initiatives i.e. mentoring, conducting interview processes, verifying external works.<br/>
+#    achievements:
+#      desc: |
+#        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+#        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+    technologies:
+      - Terraform
+      - Ansible
+      - Python
+      - Python unit tests
+      - Patching
+      - CI/CD
+      - BitBucket
+      - Github
+      - AzureDevOps
+      - AWS
+      - GCP
+      - Docker
+      - Podman
+      - Kubernetes
+
+  - role: Technology Expert
+    time: 2021 - 2022
+    company: NRD Cyber Security
+    details: |
+      Looking after internal on-premises infrastructure.<br/>
+      Enforcing best development practices.<br/>
+      Architecturing security breaches detection elimination as product services in the AWS Cloud.<br/>
+    technologies:
+      - Terraform
+      - Docker
+      - Kubernetes
+      - VMWare
+      - AWS Cloud
+      - CI/CD
+      - Github
+      - Patching
+
+  - role: Senior Devops Engineer
+    subrole: Security Champion
+    time: 2019 - 2021
+    company: Bankera
+    details: |
+      Bankera is building the digital bank for the blockchain era, with the aim of integrating traditional and crypto economies and becoming the one-stop-shop for all financial services.<br/>
+      The natural extension of SpectroCoin was to go beyond payment processing by leveraging the existing technology and expertise to build Bankera.<br/>
+      Bankera offers traditional and crypto-friendly financial services to individuals and businesses across the world.<br/>
+      Functional implementer of the ISO/IEC 27001:2013 certification.<br/>
+    technologies:
+      - Openstack
+      - XCP-NG
+      - AWS
+      - Ansible
+      - Docker
+      - Networking IPv4
+      - Networking IPv6
+      - Security
+      - Patching
+      - CI/CD
+      - Gitlab
+      - Foreman
+      - Kickstart
+      - PXE
+      - IDM/IAM
+      - Bitcoin Blockchain
+      - Ethereum Blockchain
+      - Wordpress
+
+#awards:
+#  - name: Award Name Lorem
+#    description: |
+#      Award desc goes here, ultricies nec, pellentesque
+#      eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+#  - name: Award Name Lorem
+#    description: |
+#      Award desc goes here, ultricies nec, pellentesque
+#      eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+
+# ### Projects are not used in this template for now
+#projects:
+#  title: Projects
+#  intro: >
+#    You can list your side projects or open source libraries in this
+#    section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#    Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+#  assignments:
+#    - title: Velocity
+#      link: "#hook"
+#      tagline: "A responsive website template designed to help startups promote, market and sell their products."
+#
+#    - title: DevStudio
+#      link: "#"
+#      tagline: "A responsive website template designed to help web developers/designers market their services."
+#
+#    - title: Tempo
+#      link: "#"
+#      tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+#
+#    - title: Atom
+#      link: "#"
+#      tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+#
+#    - title: Delta
+#      link: "#"
+#      tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+# ### Publications are not used in this template for now
+#publications:
+#  title: Publications
+#  intro: |
+#    You can list your publications in this section. Lorem ipsum dolor sit
+#    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#    bibendum fringilla a eu lectus.
+#  papers:
+#    - title: The Art of Computer Programming
+#      link: "#"
+#      authors: Donald E. Knuth
+#      conference: Addison-Wesley, 1968
+#
+#    - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#      link: "#"
+#      authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#      conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+#
+#    - title: A syntax directed compiler for Algol 60
+#      link: "#"
+#      authors: Edgar T. Irons
+#      conference: "Comm. ACM 4 (1961), 51–55"
+
+skills:
+  - category: Automation
+    tools:
+      - name: Ansible
+        level: 98%
+      - name: Terraform
+        level: 92%
+      - name: Puppet
+        level: 65%
+      - name: Salt
+        level: 50%
+      - name: Chef
+        level: 35%
+  - category: Programming
+    tools:
+      - name: Python
+        level: 95%
+      - name: PHP
+        level: 88%
+      - name: Ruby/Rails
+        level: 50%
+      - name: Go
+        level: 20%
+  - category: Virtualization
+    tools:
+      - name: VMWare
+        level: 90%
+      - name: XCP-NG
+        level: 90%
+      - name: OpenStack
+        level: 75%
+      - name: Proxmox
+        level: 40%
+  - category: others
+    tools:
+      - DevOps
+      - Code Review
+      - Git
+      - Python Unit Testing
+      - Vulnerability Scanning
+      - Encryption
+      - Routing
+      - Storage
+      - Monitoring
+      - Disaster & Recovery
