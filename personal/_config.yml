@@ -3,10 +3,10 @@
 # Site Settings
 
 # SEO plugin
-title: My Resume
+title: Giedrius Tuminauskas — Résumé
 author: Giedrius Tuminauskas
-tagline: Senior Lead DevOps Engineer # Short description for jekyll-seo-tag
-description: Senior Technology Expert / Senior Lead DevOps engineer / Linux System and Network administrator with extensive 20 years experience # Longer description for jekyll-seo-tag
+tagline: Lead Platform Engineer # Short description for jekyll-seo-tag
+description: Lead Platform Engineer with experience in DevOps, infrastructure automation, Linux systems, security, and technical leadership # Longer description for jekyll-seo-tag
 
 url: "https://gtuminauskas.github.io"
 baseurl: "/website-jekyll" # change it according to your repository name
@@ -17,11 +17,8 @@ baseurl: "/website-jekyll" # change it according to your repository name
 
 social:
   links:
-    - https://twitter.com/stevedoe123
-    - https://www.facebook.com/stevedoe123
-    - https://www.linkedin.com/in/stevedoe123
-    - https://github.com/stevedoe123
-    - https://keybase.io/stevedoe123
+    - https://www.linkedin.com/in/gtuminauskas
+    - https://github.com/gtuminauskas
 
 google_site_verification: # Put your google verification tag here
 

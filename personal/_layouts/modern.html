@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/modern.css' | relative_url }}">
+  <script src="{{ '/assets/js/resume.js' | relative_url }}" defer></script>
+</head>
+<body>
+{% assign resume = site.data.data %}
+{% assign profile = resume.header %}
+<a class="skip-link" href="#main">Skip to résumé</a>
+<div class="page-shell">
+  <nav class="toolbar" aria-label="Résumé navigation">
+    <a class="wordmark" href="#top">{{ site.author | escape }}</a>
+    <div>{% if resume.experiences and resume.experiences.size > 0 %}<a href="#experience">Experience</a>{% endif %}{% if resume.skills and resume.skills.size > 0 %}<a href="#skills">Expertise</a>{% endif %}<button type="button" id="print-resume" hidden>Print / Save PDF</button></div>
+  </nav>
+  <header class="hero" id="top">
+    <div>
+      <p class="eyebrow">{{ profile.location | default: 'Professional résumé' | escape }}</p>
+      <h1>{{ site.author | escape }}</h1>
+      <p class="headline">{{ profile.headline | default: site.tagline | escape }}</p>
+      <ul class="contact-list" aria-label="Contact and profiles">
+        {% if profile.email and profile.email != '' %}<li><a href="mailto:{{ profile.email | escape }}">{{ profile.email | escape }}</a></li>{% endif %}
+        {% if profile.phone and profile.phone != '' %}<li><a href="tel:{{ profile.phone | remove: ' ' | escape }}">{{ profile.phone | escape }}</a></li>{% endif %}
+        {% if profile.website and profile.website != '' %}<li><a href="{{ profile.website | escape }}">{{ profile.website | remove: 'https://' | remove: 'http://' | escape }}</a></li>{% endif %}
+        {% assign networks = 'linkedin,github,gitlab,bitbucket,twitter,stack-overflow,codewars,goodreads' | split: ',' %}
+        {% for network in networks %}
+          {% assign username = profile[network] %}
+          {% if username and username != '' %}
+            {% case network %}
+              {% when 'linkedin' %}{% assign prefix = 'https://www.linkedin.com/in/' %}
+              {% when 'github' %}{% assign prefix = 'https://github.com/' %}
+              {% when 'gitlab' %}{% assign prefix = 'https://gitlab.com/' %}
+              {% when 'bitbucket' %}{% assign prefix = 'https://bitbucket.org/' %}
+              {% when 'twitter' %}{% assign prefix = 'https://twitter.com/' %}
+              {% when 'stack-overflow' %}{% assign prefix = 'https://stackoverflow.com/users/' %}
+              {% when 'codewars' %}{% assign prefix = 'https://www.codewars.com/users/' %}
+              {% when 'goodreads' %}{% assign prefix = 'https://www.goodreads.com/user/show/' %}
+            {% endcase %}
+            <li><a href="{{ prefix }}{{ username | escape }}">{{ network | replace: '-', ' ' | capitalize }}<span class="print-username"> / {{ username | escape }}</span></a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% if profile.avatar and profile.avatar != '' %}<img class="portrait" src="{{ '/assets/images/' | append: profile.avatar | relative_url }}" alt="Portrait of {{ site.author | escape }}" width="160" height="160">{% endif %}
+  </header>
+  <main id="main">
+    {% if resume.summary and resume.summary != '' %}
+    <section class="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">{{ site.data.labels.career-profile | default: 'Profile' }}</h2>
+      <div class="prose">{{ resume.summary | markdownify }}</div>
+    </section>
+    {% endif %}
+    <div class="resume-grid">
+      <div>
+        {% if resume.experiences and resume.experiences.size > 0 %}
+        <section id="experience" aria-labelledby="experience-title">
+          <div class="section-heading"><h2 id="experience-title">{{ site.data.labels.experience | default: 'Experience' }}</h2><span>Career history</span></div>
+          {% for job in resume.experiences %}
+          <article class="job">
+            <header class="job-heading"><div><h3>{{ job.role | escape }}</h3>{% if job.subrole %}<p class="subrole">{{ job.subrole | escape }}</p>{% endif %}<p class="company">{{ job.company | escape }}</p></div><p class="date">{{ job.time | escape }}</p></header>
+            {% if job.location %}<p class="location">{{ job.location | escape }}</p>{% endif %}
+            {% if job.details %}<div class="prose">{{ job.details | markdownify }}</div>{% endif %}
+            {% if job.achievements %}<h4>{{ site.data.labels.achievements | default: 'Achievements' }}</h4>{% if job.achievements.desc %}<div class="prose">{{ job.achievements.desc | markdownify }}</div>{% endif %}{% if job.achievements.highlights %}<ul>{% for highlight in job.achievements.highlights %}<li>{{ highlight | escape }}</li>{% endfor %}</ul>{% endif %}{% endif %}
+            {% if job.technologies and job.technologies.size > 0 %}<ul class="tags" aria-label="{{ site.data.labels.technologies | default: 'Technologies used' }}">{% for technology in job.technologies %}<li>{{ technology | escape }}</li>{% endfor %}</ul>{% endif %}
+          </article>
+          {% endfor %}
+        </section>
+        {% endif %}
+      </div>
+      <aside aria-label="Qualifications and expertise">
+        {% if resume.skills and resume.skills.size > 0 %}
+        <section id="skills" aria-labelledby="skills-title"><h2 id="skills-title">{{ site.data.labels.skills | default: 'Expertise' }}</h2>
+          {% for group in resume.skills %}<div class="skill-group"><h3>{{ group.category | replace: 'others', 'Professional skills' | escape }}</h3><ul class="skill-list">{% for tool in group.tools %}<li>{{ tool.name | default: tool | escape }}</li>{% endfor %}</ul></div>{% endfor %}
+        </section>
+        {% endif %}
+        {% if resume.education and resume.education.size > 0 %}
+        <section aria-labelledby="education-title"><h2 id="education-title">{{ site.data.labels.education | default: 'Education' }}</h2>
+          {% for entry in resume.education %}<div class="qualification"><h3>{{ entry.degree | escape }}</h3><p>{{ entry.university | escape }}</p><p class="date">{{ entry.time | escape }}</p>{% if entry.details %}<div class="prose">{{ entry.details | markdownify }}</div>{% endif %}</div>{% endfor %}
+        </section>
+        {% endif %}
+        {% if resume.awards and resume.awards.size > 0 %}<section aria-labelledby="awards-title"><h2 id="awards-title">{{ site.data.labels.awards | default: 'Awards' }}</h2>{% for award in resume.awards %}<div class="qualification"><h3>{{ award.name | escape }}</h3>{% if award.description %}<div class="prose">{{ award.description | markdownify }}</div>{% endif %}</div>{% endfor %}</section>{% endif %}
+        {% if resume.languages and resume.languages.size > 0 %}<section aria-labelledby="languages-title"><h2 id="languages-title">{{ site.data.labels.language | default: 'Languages' }}</h2><ul class="plain-list">{% for language in resume.languages %}<li><strong>{{ language.idiom | escape }}</strong><span>{{ language.level | escape }}</span></li>{% endfor %}</ul></section>{% endif %}
+        {% if resume.interests and resume.interests.size > 0 %}<section aria-labelledby="interests-title"><h2 id="interests-title">{{ site.data.labels.interests | default: 'Interests' }}</h2><ul class="interest-list">{% for interest in resume.interests %}<li>{% if interest.link and interest.link != '' %}<a href="{{ interest.link | escape }}">{{ interest.name | escape }}</a>{% else %}{{ interest.name | escape }}{% endif %}</li>{% endfor %}</ul></section>{% endif %}
+      </aside>
+    </div>
+    {{ content }}
+  </main>
+  <footer class="site-footer"><span>{{ site.author | escape }}</span><a href="#top">Back to top ↑</a></footer>
+</div>
+</body>
+</html>

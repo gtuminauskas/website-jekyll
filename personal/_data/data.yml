@@ -4,6 +4,8 @@
 
 header:
   # Profile information
+  headline: Lead Platform Engineer
+  location: Lithuania
   avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
   email: giedrius@tuminauskas.lt
   phone: +370 647 23028
@@ -23,7 +25,7 @@ languages:
   - idiom: English
     level: Professional
   - idiom: Russian
-    level: Intermediate
+    level: Limited working proficiency
 
 interests:
   - name: Movies
@@ -40,7 +42,7 @@ summary: |
   In my current role, I am not just a leader but also a committed contributor, balancing my managerial responsibilities with a love for hands-on technical work. My goal is to continue growing within the DevOps sphere, aiming for higher management roles while maintaining a deep involvement in project execution and company direction.<br/>
 
 education:
-  - degree: BSc in Telecommunications and Electronics Engineering
+  - degree: Telecommunications and Electronics Engineering (studies, not completed)
     university: Kaunas Technology University
     time: 2002 - 2004
     details: |
@@ -48,10 +50,30 @@ education:
         - State support
         - Part-time studies
 
+  - degree: Diploma, Small Business Administration and Management
+    university: Kaunas Vocational Training Centre for Service Business Specialists
+    time: 2000 - 2003
+  - degree: Electronic tools electromechanic
+    university: Kaunas school of mechanics
+    time: 1998 - 2000
+  - degree: Main School Diploma
+    university: Kaunas 'Aukuras' Secondary School
+    time: 1989 - 1998
+
 experiences:
-  - role: Senior Lead DevOps Engineer (Founder)
-    time: 2024 - Present
-    company: Admineta
+  - role: Full Stack Team Lead
+    time: March 2025 - Present
+    company: Accenture Baltics
+    location: Vilnius, Lithuania
+
+  - role: Senior DevOps Engineer
+    time: August 2024 - February 2025
+    company: Danske Bank
+    location: Vilnius, Lithuania
+
+  - role: Director / Founder / Senior Lead DevOps Engineer
+    time: July 2024 - Present
+    company: UAB Admineta
     details: |
       Business to business (B2B) contract work with clients.
         - Hybrid/remote work
@@ -73,7 +95,7 @@ experiences:
       - Patching
 
   - role: Senior DevOps Engineer
-    time: 2022 - 2024
+    time: June 2022 - June 2024
     company: Zenitech
     details: |
       Automating infrastructure deployments using terraform and ansible, also extending functionality using python as the core scripting language.<br/>
@@ -103,7 +125,7 @@ experiences:
       - Kubernetes
 
   - role: Technology Expert
-    time: 2021 - 2022
+    time: May 2021 - April 2022
     company: NRD Cyber Security
     details: |
       Looking after internal on-premises infrastructure.<br/>
@@ -121,7 +143,7 @@ experiences:
 
   - role: Senior Devops Engineer
     subrole: Security Champion
-    time: 2019 - 2021
+    time: December 2019 - May 2021
     company: Bankera
     details: |
       Bankera is building the digital bank for the blockchain era, with the aim of integrating traditional and crypto economies and becoming the one-stop-shop for all financial services.<br/>
@@ -169,7 +191,7 @@ experiences:
       - Vulnerability Assessment
 
   - role: Senior Devops Engineer
-    time: 2019 - 2019
+    time: October 2019 - December 2019
     company: Ingenico
     details: |
       Ingenico - Global leader in seamless payment solutions. It provides its clients with sustainable,
@@ -194,7 +216,7 @@ experiences:
       - Automation
 
   - role: Senior Devops Engineer
-    time: 2018 - 2019
+    time: September 2018 - October 2019
     company: SpectroCoin
     details: |
       SpectroCoin - CryptoCurrency exchange platform
@@ -228,11 +250,26 @@ experiences:
 
   - role: Linux Systems Engineer
     subrole: DevOps
-    time: 2017 - 2018
+    time: July 2017 - August 2018
     company: Intermedix (R1 RCM)
     details: |
-      Ingenico - Global leader in seamless payment solutions. It provides its clients with sustainable, trusted and secure solutions across the payment value chain and offers best-in-class payment services ranging from POS,
-      online payments, omnichannel solutions to issuing & acquiring and digital banking to nearly one million merchants and 1,200 banks and financial institutions
+      Intermedix equips organizations with technology and analytical tools that promote global health and safety, from crisis management to revenue optimization
+
+
+
+      - Managed and monitored a large farm of RHEL, CentOS, Ubuntu and FreeBSD physical and virtual servers within development, QA, Demo, DR and Production environments
+
+      - Dealt with system and network performance analysis, application behaviour assessment, technical issues, fault identification and resolution, health checking and status reporting
+
+      - Installed, configured, tweaked and migrated numerous VMWare / VirtualBox virtual machines
+
+      - Updated Nagios, Zabbix, DNS Bind, Ansible, Kickstart, Apache, Tomcat and other application configurations via GIT / SVN
+
+      - Used continuous integration and continuous delivery tools like Jenkins
+
+      - Automated new server installations with Vagrant, Kickstart and Ansible, Spacewalk
+
+      - Resolved issues and bugs via Atlassian Jira and maintained documentation in Confluence
     technologies:
       - Ansible
       - CI/CD (Jenkins)
@@ -256,7 +293,7 @@ experiences:
 
   - role: Systems Administrator
     subrole: DevOps
-    time: 2013 - 2017
+    time: October 2013 - June 2017
     company: Alva Reputation Analysis
     details: |
       Alva provides reputation business intelligence to many of the world's largest organisations, helping them to identify the emerging issues that impact their corporate reputation.<br/>
@@ -287,6 +324,56 @@ experiences:
       - Documentation
       - Infrastructure Automation
       - Disaster and Recovery
+
+  - role: Linux System Administrator / DevOps
+    time: August 2013 - October 2013
+    company: Swift Managed Services
+    location: London
+    details: |
+      - Virtualized physical Linux (RedHat, Debian, Fedora, Centos) & FreeBSD servers on Windows Server 2012 Standard Edition with Hyper-V – Dell PowerEdge R720 server.
+
+      - Gained authorised access to the Data Centre to inventory existing running equipment and services (Dell PowerEdge 850, 950, 1850, 1950, SC1425, 2450, 2850, 2950, Cisco ASA firewalls and switches).
+
+      - Installed new virtual CentOS servers on Windows Hyper-V and prepared for data migration.
+
+      - Configured separate CPanel, DNS, LAMP (Linux, Apache, MySQL & PHP) Stack and mail services.
+
+      - Assigned public network IP addresses and managed to create IPTABLES specific firewall rules according to the running services.
+  - role: Systems administrator
+    time: January 2011 - August 2013
+    company: N&J Building Services Ltd
+    location: London Area, United Kingdom
+    details: |
+      Organised computerised systems inventory check, scheduled approved and authorised equipment renewal options, and completed multiple upgrade phases. Managed to upgrade company’s IT infrastructure with a domain controller and active directory using Microsoft Windows Servers 2008 R2 to 2012 to achieve efficient administration of network equipment and workstations. Installed and configured Windows Server Update Services and managed automatic updates for network clients using Group Policy Management. Provided online backup procedures to ensure hardware/ software utilization at maximum capacity and to minimize loss of production time. Fully accountable for planning the move phases relating to the data and voice infrastructure for the new office and working with external vendors to install and configure equipment. Developing website and internal project management and reporting system using IIS & Apache, MySQL and PHP. Designed and created training curriculum used in training the staff members and contractors in the use of company website and internal reporting system and achieved speed in managing separate projects. Prepared and evaluated documentation templates for risk assessment, method statements, references, projects & expenses breakdown calculations, quoting and invoicing systems. Assisted in communicating and resolving issues with clients, planning, organizing and ordering materials as well as services from various manufacturers and suppliers via telephone and email.
+  - role: IT Deployment Engineer
+    time: April 2007 - November 2011
+    company: ITech Services Ltd
+    location: London Area, United Kingdom
+    details: |
+      Built, installed, configured (Windows 2003/2008R2 Servers) and deployed Windows 7 workstations. Tested the Linux networking systems (Ubuntu, CentOS), monitored the performance (using PTRG, Zenoss, Zabbix & Nagios). Also configured and updated firewalls (IPCop, IPTables, IPChain), firmware as necessary for routers (Netgear, D-Link, Cisco [2600/3600/3700]). Performed technical support, including escalation of problems and incident identification with subsequent resolution. Used diplomacy and tact in all situations to ensure end-user satisfaction. Documented and maintained supply of all required inventory. Updated management on a regular basis through reports and emails. Used Windows Servers 2008 R2 built from scratch for Windows 7 deployment of 1000+ desktops. ️Sub-contracted for such clients: Vodafone, BSkyB, BP, ISG, KPMG, Tesco, British Transport Police, Burberry, Gazprom, News International, OMD International, Deloitte, Roche, Kleinwort Benson
+  - role: Cable engineer
+    time: January 2007 - March 2007
+    company: Sentrum (Colo) Ltd
+    location: London Area, United Kingdom
+    details: |
+      Performed routines of running, labelling and testing Cat6 copper cables at the Data Centre. Deliveries reception, check-up & secure storage of equipment. Physical installation, building server racks, commissioning of equipment as per Client Standards. Regular monitoring of server racks and cabinets equipment within the data centre. Assisted in troubleshooting and solving issues related to cabling and networking. Keeping the Data Center organized and efficient
+  - role: IT Engineer / Team Leader
+    time: September 2006 - December 2006
+    company: CGG
+    location: Buntingford, England, United Kingdom
+    details: |
+      Responsible for the team work in upgrade operations building additional server racks to improve performance of their high-performance computing platform in the Data Centre. Decommissioning of redundant equipment and cabling. Carry out regular system checks to ensure the continued operation of the environment. Deliveries reception, check-up & secure storage of equipment. Documentation and management of new data center assets. Maintaining safe, obstruction free and clean data center premises
+  - role: IT Support Engineer
+    time: 2004 - 2006
+    company: London Community College
+    location: London, United Kingdom
+    details: |
+      Supported daily Desktop & Laptop computer network (Windows XP/2003 Server). Windows AD management, Software updates and other network services monitoring. Website creation and maintenance (Windows, Apache, MySQL, PHP).
+  - role: IT Support Technician
+    time: June 2001 - April 2003
+    company: Kaunas Vocational Training Centre for Service Business Specialists
+    details: |
+      Computer networks support; Web development; Documentation;
 
 #awards:
 #  - name: Award Name Lorem
@@ -402,3 +489,6 @@ skills:
       - Performance analysis
       - Problem solving
       - Vulnerability assessment
+
+awards:
+  - name: IPv6 allocation, tunnelling and deployment

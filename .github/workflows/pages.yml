@@ -1,0 +1,82 @@
+name: Deploy résumé to GitHub Pages
+
+on:
+  push:
+    paths:
+      - 'personal/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+# Repository variables can override runtime settings without editing the workflow.
+env:
+  RUBY_VERSION: ${{ vars.RUBY_VERSION || '4.0.9' }}
+  SITE_SOURCE_DIRECTORY: personal
+  SITE_OUTPUT_DIRECTORY: pages-site
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ${{ vars.PAGES_RUNNER || 'ubuntu-26.04' }}
+    permissions:
+      contents: read
+      pages: read
+    defaults:
+      run:
+        working-directory: ${{ env.SITE_SOURCE_DIRECTORY }}
+    env:
+      BUNDLE_FROZEN: 'true'
+      JEKYLL_ENV: production
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Ruby and locked gems
+        uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199 # v1.338.0
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+          working-directory: ${{ env.SITE_SOURCE_DIRECTORY }}
+          bundler-cache: true
+
+      - name: Read Pages configuration
+        id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Build site
+        env:
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          ruby -ryaml -e 'File.write(ENV.fetch("RUNNER_TEMP") + "/pages-config.yml", {"url" => ENV.fetch("PAGES_ORIGIN")}.to_yaml)'
+          bundle exec jekyll build \
+            --config "_config.yml,$RUNNER_TEMP/pages-config.yml" \
+            --baseurl "$PAGES_BASE_PATH" \
+            --destination "$RUNNER_TEMP/$SITE_OUTPUT_DIRECTORY" \
+            --disable-disk-cache
+
+      - name: Upload generated site
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: ${{ runner.temp }}/${{ env.SITE_OUTPUT_DIRECTORY }}
+
+  deploy:
+    needs: build
+    runs-on: ${{ vars.PAGES_RUNNER || 'ubuntu-26.04' }}
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
